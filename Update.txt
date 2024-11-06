@@ -1,0 +1,29 @@
+SGT.exe;1.0.0.1;   [' comments    ]
+'Config.ini
+'CR_F_Tecnica_Model.rpt
+'CR_F_Produccio.rpt
+'CR_F_Preus.rpt
+'CR_F_Confeccio_Model_Pag1.rpt
+'CR_F_Escandall.rpt
+'CR_F_Llista_models.rpt
+CR_Tasques.rpt
+CR_Tasques_G1.rpt
+' <File Name>;<Version>;   [' comments    ]
+' <File Name>[;<Version>]; [' comments    ]  
+' <File Name>[;?];         [' comments    ]
+' <File Name>[;delete];    [' comments    ]
+' ...
+' Blank lines and comments are ignored
+' The first line should be the current program/version
+' from the second line to the end the second parameter is optional
+' if the second parameter is not specified the file is updated.
+' if the version is specified the update checks the version
+' if the second parameter is an interrogation mark (?) the update checks if the 
+' file alredy exists and "don't" upgrade if exists.
+' if the second parameter is "delete" the system try to delete the file
+' "'" (chr(39)) start a line comment (like vb)
+
+' Function Return Value
+' True means that the program needs to exit because: the autoupdate did the update
+' or there was an error during the update
+' False - nothing was done
